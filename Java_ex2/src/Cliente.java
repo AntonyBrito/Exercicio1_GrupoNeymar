@@ -1,8 +1,8 @@
 public class Cliente {
     //Atributos
-    private int id;// (identificador do cliente)
-    private String nome;// (nome do cliente)
-    private String email;// (e-mail para contato)
+    int id;// (identificador do cliente)
+    String nome;// (nome do cliente)
+    String email;// (e-mail para contato)
     //Métodos
     public Cliente(int id, String nome, String email) {
         this.id = id;
