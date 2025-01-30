@@ -5,6 +5,9 @@ public class Personagem {
     private int forca;
     private int inteligencia;
 
+    public Personagem(){
+        //construtor padrao
+    }
     public Personagem(int id, String nome, int hp, int forca, int inteligencia) {
         this.id = id;
         this.nome = nome;
