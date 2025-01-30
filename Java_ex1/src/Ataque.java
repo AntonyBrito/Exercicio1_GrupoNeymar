@@ -1,6 +1,6 @@
 public class Ataque {
     private int id;
-    private String tipo; // "fisico" ou "magico"
+    private String tipo;
     private int dano;
 
     public Ataque(int id, String tipo, int dano) {
@@ -11,18 +11,18 @@ public class Ataque {
 
     public int calcularDanoPersonagem(Personagem personagem) {
         if (this.tipo.equals("fisico")) {
-            return this.dano * personagem.getForca();  // Acesso através do getter
+            return this.dano * personagem.getForca();
         } else if (this.tipo.equals("magico")) {
-            return this.dano * personagem.getInteligencia();  // Acesso através do getter
+            return this.dano * personagem.getInteligencia();
         }
         return 0;
     }
 
     public int calcularDanoInimigo(Inimigo inimigo) {
-        return this.dano + inimigo.getDano();  // Acesso através do getter
+        return this.dano + inimigo.getDano();
     }
 
-    // Getters
+
     public String getTipo() {
         return tipo;
     }
