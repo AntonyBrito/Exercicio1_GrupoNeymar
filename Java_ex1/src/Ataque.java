@@ -1,6 +1,6 @@
 public class Ataque {
     private int id;
-    private String tipo; // "fisico" ou "magico"
+    private String tipo;
     private int dano;
 
     public Ataque(int id, String tipo, int dano) {
@@ -22,7 +22,7 @@ public class Ataque {
         return this.dano + inimigo.getDano();
     }
 
-    // Getters
+
     public String getTipo() {
         return tipo;
     }
